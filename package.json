@@ -9,6 +9,7 @@
   "author": "Simon Flowers",
   "license": "MIT",
   "dependencies": {
-    "buffer-reader": "^0.1.0"
+    "buffer-reader": "^0.1.0",
+    "pngjs-image": "^0.11.7"
   }
 }
