@@ -57,6 +57,8 @@ module.exports = class OTClientDataReader {
 
         let image = this._createSpriteSheet(groups[0]);
         //image.writeImage('test.png');
+        let imageBase64 = 'data:image/png;base64,' + image.toBlobSync().toString('base64');
+        return imageBase64;
     }
 
     getSpriteSheet(category, id) {
@@ -74,7 +76,6 @@ module.exports = class OTClientDataReader {
                     }
                 }
                 var image = this._createSpriteSheet(group);
-                //image.writeImage('test.png');
             }
         }
     }
